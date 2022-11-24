@@ -8,7 +8,6 @@ export default function Accueil() {
   const [changePseudo, setChangePseudo] = useState("");
 
   return (
-    <div className="pageAccueil">
       <div className="accueil">
         <div className="txt">
           <div className="alienDiscours">
@@ -32,6 +31,5 @@ export default function Accueil() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
