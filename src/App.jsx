@@ -14,9 +14,8 @@ function App() {
   return (
     <div>
       {path === '/' && <Map isClickable={isClickable} setPath={setPath} />}
-      {path === 'planet-1' && <FindCristal1 setPath={setPath} />}
+      {path === 'planet-1' && <FindCristal1 setPath={setPath} setClickable={setClickable} isClickable={isClickable} />}
     </div>
-
   );
 }
 
