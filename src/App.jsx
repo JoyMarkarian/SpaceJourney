@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Map isClickable={isClickable} />
-      <FindCristal1 />
+      {/* <FindCristal1 /> */}
     </div>
   );
 }
