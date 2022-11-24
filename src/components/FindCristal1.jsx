@@ -1,5 +1,5 @@
 import React from 'react';
-import './findCristal.css'
+import './findCristal1.css'
 
 export default function FindCristal1 () {
 
