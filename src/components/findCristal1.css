@@ -1,8 +1,9 @@
 .findCristalBg{
     background-image: url('src/assets/bg-planet-1.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
     height: 800px;
     width: 1500px;
-    
     position: relative;
 }
 
