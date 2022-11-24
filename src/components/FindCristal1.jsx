@@ -6,7 +6,6 @@ import './findCristal1.css';
 export default function FindCristal1({ checkQuest, planet1isIsClickable, setPlanet1isIsClickable, setPath }) {
   const [displayCrystal, setdisplayCrystal] = useState(false);
   const [displayWellDone, setDisplayWellDone] = useState(false);
-  console.log(planet1isIsClickable);
 
   const dNoneCrystal = () => {
     setdisplayCrystal(false);
