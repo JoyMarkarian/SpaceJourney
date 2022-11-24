@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import FindCristal1 from './components/FindCristal1';
 import Map from './pages/Map';
 import './pages/map.css';
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <div>
       <Map isClickable={isClickable} />
+      <FindCristal1 />
     </div>
   );
 }
