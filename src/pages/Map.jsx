@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 // eslint-disable-next-line react/prop-types
 function Map({ isClickable }) {
   const [displayModal, setDisplayModal] = useState(false);
   const handleClick = () => {
-    console.log('bonjour');
+    console.log('va vers le jeu');
   };
 
   const handleDisplayModal = () => {
