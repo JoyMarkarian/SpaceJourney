@@ -1,0 +1,19 @@
+.findCristalBg{
+    background-image: url('src/assets/bg-planet-1.jpg');
+    height: 800px;
+    width: 1500px;
+    
+    position: relative;
+}
+
+.myCristal{
+    background: none;
+    background-image: url('src/assets/crystal-1.png');
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 30px;
+    right: 328px;
+}
