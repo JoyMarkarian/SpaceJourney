@@ -1,7 +1,7 @@
 import React from 'react';
 import './findCristal.css'
 
-export default function FindCristal () {
+export default function FindCristal1 () {
 
     return (
         <div className="findCristalBg">
