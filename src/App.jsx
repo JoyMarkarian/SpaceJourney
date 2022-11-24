@@ -1,10 +1,16 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from 'react';
+import Map from './pages/Map';
+import './pages/map.css';
 
 function App() {
+  const [isClickable, setClickable] = useState([
+    { planet: false },
+    { planet: false },
+    { planet: false },
+  ]);
   return (
-    <div className="App">
-      <h1>noPainNoGain</h1>
+    <div>
+      <Map isClickable={isClickable} />
     </div>
   );
 }
