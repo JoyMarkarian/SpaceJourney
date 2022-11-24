@@ -36,6 +36,17 @@
     left: 50px;
 }
 
+.notClickable-planet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.406);
+    height: 60px;
+    width: 100px;
+    padding: 5px;
+}
+
 .map-not-possible {
     display: flex;
     justify-content: center;
@@ -49,3 +60,4 @@
     left: 50px;
     z-index: 1;
 }
+

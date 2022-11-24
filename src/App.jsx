@@ -3,10 +3,14 @@ import Map from './pages/Map';
 import './pages/map.css';
 
 function App() {
-  const [isClickable, setClickable] = useState(false);
+  const [isClickable, setClickable] = useState([
+    { planet: false },
+    { planet: false },
+    { planet: false },
+  ]);
   return (
     <div>
-      <Map isClickable={isClickable} setClickable={setClickable} />
+      <Map isClickable={isClickable} />
     </div>
   );
 }
