@@ -1,5 +1,5 @@
-.findCristalBg{
-    background-image: url('src/assets/bg-planet-1.jpg');
+.findCristalBg2{
+    background-image: url('./src/assets/bg-planet-2.jpg');
     background-repeat: no-repeat;
     /* background-size: cover; */
     height: 800px;
@@ -7,9 +7,9 @@
     position: relative;
 }
 
-.myCristal-toFind{
+.myCristal-toFind2{
     background: none;
-    background-image: url('src/assets/crystal-1.png');
+    background-image: url('src/assets/crystal-2.png');
     background-position: center;
     background-size: cover;
     height: 30px;
@@ -19,22 +19,19 @@
     right: 328px;
 }
 
-.myCrystal-container{
+.myCristal2{
+    background: none;
+    background-image: url('src/assets/crystal-2.png');
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
     position: absolute;
-    color: black;
-    top: 150px;
-    right: 428px;
-    background-color: rgb(255, 255, 255);
-    padding: 100px;
-    width: 300px;
-}
-.myCristal {
-    background-image: url('src/assets/crystal-1.png');
-    height: 300px;
-    width: 300px;
+    top: 30px;
+    right: 328px;
 }
 
-.well-done{
+.well-done2{
     opacity: 0.9;
     display: flex;
     flex-direction: column;
