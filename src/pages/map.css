@@ -1,0 +1,51 @@
+.map-bg {
+    background-color: blueviolet;
+    height: 850px;
+    width: 400px;
+    position: relative;
+}
+
+.map-planet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: aqua;
+    height: 60px;
+    width: 100px;
+    padding: 5px;
+}
+
+.map-planet-1 {
+    top: 80vh;
+    left: 250px;
+}
+
+.map-planet-2 {
+    top: 60vh;
+    left: 50px;
+}
+
+.map-planet-3 {
+    top: 40vh;
+    left: 250px;
+}
+
+.map-planet-4 {
+    top: 20vh;
+    left: 50px;
+}
+
+.map-not-possible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+    background-color: azure;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 30vh;
+    left: 50px;
+    z-index: 1;
+}
