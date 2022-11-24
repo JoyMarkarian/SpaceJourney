@@ -1,3 +1,7 @@
+.pageaccueil {
+  /* position:absolute; */
+}
+
 .accueil{
   background-image: url("../assets/galaxyaccueil.jpg");
   background-size: cover;
@@ -10,5 +14,14 @@
 
 .inputPseudo {
   background-color: #FF4EED;
+  margin-left: 5%;
 }
 
+.alienDiscours {
+  display: flex;
+}
+
+.pictureAstro {
+  height: 150px;
+  margin-bottom: 220px;
+}
