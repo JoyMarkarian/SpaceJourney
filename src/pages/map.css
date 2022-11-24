@@ -1,4 +1,5 @@
 .map-bg {
+    background-image: url('../assets/map-bg.jpg');
     background-color: blueviolet;
     height: 850px;
     width: 400px;
@@ -6,34 +7,15 @@
 }
 
 .map-planet {
+    /* background-image: rgb(255, 255, 0); */
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    background-color: aqua;
-    height: 60px;
-    width: 100px;
-    padding: 5px;
-}
-
-.map-planet-1 {
-    top: 80vh;
-    left: 250px;
-}
-
-.map-planet-2 {
-    top: 60vh;
-    left: 50px;
-}
-
-.map-planet-3 {
-    top: 40vh;
-    left: 250px;
-}
-
-.map-planet-4 {
-    top: 20vh;
-    left: 50px;
+    height: 150px;
+    width: 150px;
+    background: none;
+    
 }
 
 .notClickable-planet {
@@ -41,10 +23,42 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    background-color: rgba(255, 0, 0, 0.406);
-    height: 60px;
-    width: 100px;
-    padding: 5px;
+    opacity: 0.5;
+    height: 150px;
+    width: 150px;
+    background: none;
+}
+
+.map-planet-1 {
+    background-image: url('../assets/planet-1.png');
+    background-position: center;
+    background-size: cover;
+    top: 75vh;
+    left: 200px;
+}
+
+.map-planet-2 {
+    background-image: url('../assets/planet-2.png');
+    background-position: center;
+    background-size: cover;
+    top: 50vh;
+    left: 40px;
+}
+
+.map-planet-3 {
+    background-image: url('../assets/planet-3.png');
+    background-position: center;
+    background-size: cover;
+    top: 30vh;
+    left: 200px;
+}
+
+.map-planet-4 {
+    background-image: url('../assets/planet-4.png');
+    background-position: center;
+    background-size: cover;
+    top: 5vh;
+    left: 50px;
 }
 
 .map-not-possible {

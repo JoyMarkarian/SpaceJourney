@@ -15,10 +15,10 @@ function Map({ isClickable }) {
   return (
     <div className="map-bg">
       {displayModal ? <button type="button" onClick={() => setDisplayModal(false)} className="map-not-possible">no possible</button> : ''}
-      <button type="button" className="map-planet map-planet-1" onClick={handleClick}>planete 1</button>
-      <button type="button" className={`map-planet-2 ${isClickable[0].planet ? 'map-planet' : 'notClickable-planet'}`} onClick={isClickable[0].planet ? handleClick : handleDisplayModal}>Planet 2</button>
-      <button type="button" className={`map-planet-3 ${isClickable[1].planet ? 'map-planet' : 'notClickable-planet'}`} onClick={isClickable[1].planet ? handleClick : handleDisplayModal}>planete 3</button>
-      <button type="button" className={`map-planet-4 ${isClickable[2].planet ? 'map-planet' : 'notClickable-planet'}`} onClick={isClickable[2].planet ? handleClick : handleDisplayModal}>planete 4</button>
+      <button aria-label="planet-1" type="button" className="map-planet map-planet-1" onClick={handleClick} />
+      <button aria-label="planet-2" type="button" className={`map-planet-2 ${isClickable[0].planet ? 'map-planet' : 'notClickable-planet'}`} onClick={isClickable[0].planet ? handleClick : handleDisplayModal} />
+      <button aria-label="planet-3" type="button" className={`map-planet-3 ${isClickable[1].planet ? 'map-planet' : 'notClickable-planet'}`} onClick={isClickable[1].planet ? handleClick : handleDisplayModal} />
+      <button aria-label="planet-4" type="button" className={`map-planet-4 ${isClickable[2].planet ? 'map-planet' : 'notClickable-planet'}`} onClick={isClickable[2].planet ? handleClick : handleDisplayModal} />
     </div>
   );
 }
