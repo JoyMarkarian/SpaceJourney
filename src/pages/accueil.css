@@ -1,8 +1,8 @@
 .accueil{
   background-image: url("../assets/galaxyaccueil.jpg");
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  height: 800px;
+  width: 1500px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -11,13 +11,19 @@
 .inputPseudo {
   background-color: #FF4EED;
   margin-left: 5%;
+  justify-content: center;
 }
 
 .alienDiscours {
-  display: flex;
+  margin-bottom: -49%;
+  margin-left: 80%;
 }
 
 .pictureAstro {
-  height: 10rem;
-  margin-bottom: 360px;
+  position: absolute;
+  height: 25rem;
+  top: 240px;
+  left: 1000px;
+  /* margin-bottom: 100%;
+  margin-left: 200%; */
 }

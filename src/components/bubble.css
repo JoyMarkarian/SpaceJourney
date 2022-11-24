@@ -1,25 +1,30 @@
 .bubble
 {
-/* position: relative; */
-width: 200px;
-height: 60px;
+position: absolute;
+top: 320px;
+/* right: 500px; */
+left: 520px;
+width: 400px;
+height: 180px;
 padding: 7px;
 background: #FFFFFF;
+-webkit-border-radius: 59px;
+-moz-border-radius: 59px;
 border-radius: 59px;
-border: #7F7F7F solid 5px;
+border: #7F7F7F solid 9px;
 }
 
-/* .bubble:after
+.bubble:after
 {
 content: '';
 position: absolute;
 border-style: solid;
-border-width: 10px 47px 10px 0;
+border-width: 10px 0 10px 47px;
 border-color: transparent #FFFFFF;
 display: block;
 width: 0;
 z-index: 1;
-left: -47px;
+right: -47px;
 top: 57px;
 }
 
@@ -28,12 +33,11 @@ top: 57px;
 content: '';
 position: absolute;
 border-style: solid;
-border-width: 14px 51px 14px 0;
+border-width: 18px 0 18px 55px;
 border-color: transparent #7F7F7F;
 display: block;
 width: 0;
 z-index: 0;
-left: -56px;
-top: 53px;
+right: -64px;
+top: 49px;
 }
- */
