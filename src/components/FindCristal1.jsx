@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import { useEffect } from 'react';
 import './findCristal1.css';
 
 export default function FindCristal1({ checkQuest, setPlanet1isIsClickable, setPath }) {
@@ -15,7 +14,7 @@ export default function FindCristal1({ checkQuest, setPlanet1isIsClickable, setP
 
   return (
     <div className="findCristalBg">
-      <button onClick={() => setPath('/')} aria-label="crystal-1" className="button-backToMap" type="button">Back to map</button>
+      <button onClick={() => setPath('/map')} aria-label="crystal-1" className="button-backToMap" type="button">Back to map</button>
       <button onClick={() => setdisplayCrystal(!displayCrystal)} aria-label="crystal-1" className="myCristal-toFind" type="button" />
       {displayCrystal && (
       <div className='myCrystal-container'>
