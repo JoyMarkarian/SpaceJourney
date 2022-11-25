@@ -132,7 +132,7 @@ export default function Simon({ setPath }) {
       {isOn && (play.isDisplay || play.userPlay) && (
         <div className="score">{play.score}</div>
       )}
-      {play.score >= 5 ? (
+      {play.score >= 3 ? (
         <div className="next">
           <h3>Beginner's luck, move on</h3>
           <button className="nextButton" onClick={() => setPath("/Snake")}>
