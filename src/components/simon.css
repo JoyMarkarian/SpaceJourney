@@ -93,6 +93,16 @@
     background-color: purple;
     color: white;
   }
+
+  .startButton{
+    background-color: lightgray;
+    color: black;
+  }
+
+  .closeButton{
+    background-color: lightgray;
+    color: black;
+  }
   
   
   

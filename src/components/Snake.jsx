@@ -99,7 +99,7 @@ export default function Snake({ setPath }) {
                 {gameOver && <h3>GAME OVER!</h3>}
                 <button className="buttonSnake" onClick={startGame}>Start Game</button>
             </div>
-            { snake.length >= 8 ? <div>
+            { snake.length >= 4 ? <div>
               <h3>Not so bad !</h3>
               <button className="buttonSnake" onClick={() => setPath('/CatSpace')}>Next</button>
               </div> : ""}
