@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./accueil.css";
 import "../components/bubble.css";
-import ValidateButton from "../components/ValidateButton";
 
 export default function Accueil() {
   const [userPseudo, setUserPseudo] = useState();

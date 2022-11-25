@@ -12,6 +12,8 @@
   background-color: #FF4EED;
   margin-left: 5%;
   justify-content: center;
+  height: 40px;
+  width: 200px;
 }
 
 .alienDiscours {
@@ -24,6 +26,14 @@
   height: 25rem;
   top: 240px;
   left: 1000px;
-  /* margin-bottom: 100%;
-  margin-left: 200%; */
+}
+
+.validatePseudo{
+  background-color: #FF4EED;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-left: 23%;
+  display: flex;
+  align-items: flex-end;
 }
