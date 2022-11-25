@@ -70,12 +70,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: brown;
-    background-color: azure;
-    height: 30em;
+    color: #00053F;
+    height: 8em;
     width: 30em;
     top: 30vh;
     left: 50px;
     z-index: 1;
+    background-color: #2863C7;
+    opacity: 0.8;
+    font-size: 20px;
 }
 
+.button-backToHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+    background-color: azure;
+    height: 300px;
+    width: 300px;
+    top: 30vh;
+    left: 50px;
+    z-index: 1;
+    font-size: 2rem;
+}

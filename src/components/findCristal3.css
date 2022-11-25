@@ -22,13 +22,14 @@
 
 .myCrystal-container3{
     position: absolute;
-    color: black;
+    color: #10003f;
     top: 150px;
     right: 428px;
     background-color: #f792f0d1;
     padding: 60px;
     width: 300px;
-    border-radius: 130px
+    border-radius: 130px;
+    font-size: large;
 }
 
 .myCristal3{
@@ -44,14 +45,18 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    color: black;
+    color: #10003f;
     top: 150px;
     right: 328px;
     background-color: #f792f0d1;
     padding: 100px;
     border-radius: 130px;
+    color: #10003f;
+    font-size: large;
 }
 
 .btn-cristal-3 {
     background-color: #af42be;
+    color: #10003f;
+    font-size: 25px;
  }

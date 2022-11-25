@@ -1,0 +1,67 @@
+.finalpage-cockpit{
+    background-image: url('../assets/cockpit.jpg');
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-msg {
+    background-color: aliceblue;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+}
+
+.dontTouch-msg {
+    background-color: aliceblue;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+}
+
+.final-msg p {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.dontTouch-msg p {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.backToEarthButton{
+    position: absolute;
+}
+
+.rocket-bg{
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144 218 218);
+}
