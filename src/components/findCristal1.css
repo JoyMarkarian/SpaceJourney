@@ -15,8 +15,9 @@
     height: 30px;
     width: 30px;
     position: absolute;
-    top: 30px;
+    top: 44px;
     right: 328px;
+    opacity: 50%;
 }
 
 .myCrystal-container{
