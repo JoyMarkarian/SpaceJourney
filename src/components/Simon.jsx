@@ -36,7 +36,6 @@ export default function Simon() {
   useEffect(()=>{
     if(isOn && play.isDisplay){
       let newColor = colorList[Math.floor(Math.random()*4)];
-      console.log(newColor)
       const copyColors = [...play.colors];
       copyColors.push(newColor)
       setPlay({...play, colors:copyColors})
