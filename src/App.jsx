@@ -30,7 +30,7 @@ export default function App() {
 
   return (
     <div>
-      {path === '/' && <Accueil setPath={setPath}/>}
+      {path === '/' && <Accueil setPath={setPath} />}
       {path === '/map' && <Map planet1isIsClickable={planet1isIsClickable} planet2isIsClickable={planet2isIsClickable} planet3isIsClickable={planet3isIsClickable} setPath={setPath} />}
       {path === 'planet-1' && <FindCristal1 checkQuest={checkQuest} planet1isIsClickable={planet1isIsClickable} setPlanet1isIsClickable={setPlanet1isIsClickable} setPath={setPath} />}
 
