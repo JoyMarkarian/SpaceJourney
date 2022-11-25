@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './dont_touch.css'
 
 export default function Dont_touch({ setPath }) {
