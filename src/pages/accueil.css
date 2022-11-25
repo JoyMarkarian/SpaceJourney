@@ -10,7 +10,6 @@
 
 .inputPseudo {
   background-color: #FF4EED;
-  margin-left: 5%;
   justify-content: center;
   height: 40px;
   width: 200px;
@@ -33,7 +32,7 @@
   color: white;
   margin-bottom: 40px;
   margin-top: 20px;
-  margin-left: 23%;
+  margin-left: 27%;
   display: flex;
   align-items: flex-end;
 }
