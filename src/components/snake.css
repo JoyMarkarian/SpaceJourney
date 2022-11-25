@@ -1,0 +1,18 @@
+.backgroundSnake{
+    padding-top: 30px;
+    background-image: url("../assets/galaxyaccueil.jpg");
+    background-size: cover;
+    height: 800px;
+    width: 1280px;
+    text-align: center;
+    color: white;
+  }
+
+.areaSnake{
+    background-color: white;
+}
+
+.buttonSnake{
+    background-color: purple;
+    color: white;
+}

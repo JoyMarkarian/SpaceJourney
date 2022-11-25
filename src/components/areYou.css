@@ -1,9 +1,12 @@
 .backgroundGlitch{
-    background: black;
+    padding-top: 50px;
+    background-image: url("src/assets/imgAreYou/blackhole.gif");
+    background-size: cover;
     font-family: "Varela", sans-serif;
-    height: 300px;
-    width: 5000px;
+    height: 800px;
+    width: 1280px;
     display:flex column;
+    text-align: center;
 }
 
 .glitch {
@@ -12,7 +15,6 @@
     position: relative;
     width: auto;
     margin: 0 auto;
-    padding-top: 50px;
     margin-bottom: 50px;
   }
   
@@ -82,7 +84,7 @@
     }
   }
   .glitch:after {
-    padding-top: 50px;
+    padding-left: 190px;
     content: attr(data-text);
     position: absolute;
     left: 2px;
@@ -161,7 +163,7 @@
     }
   }
   .glitch:before {
-    padding-top: 50px;
+    padding-left: 190px;
     content: attr(data-text);
     position: absolute;
     left: -2px;
@@ -172,4 +174,16 @@
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim-2 3s infinite linear alternate-reverse;
+  }
+
+  .buttonAreYou{
+    margin: 100px;
+    background-color: darkblue;
+    color: white;
+  }
+
+  .buttonAreYou:hover{
+    margin: 100px;
+    background-color: darkgreen;
+    color: white;
   }

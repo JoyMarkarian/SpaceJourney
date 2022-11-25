@@ -77,9 +77,9 @@ export default function SuperQuizz({ setPath }) {
     setShowResults(false);
   };
   return (
-    <div>
+    <div className='backgroundQuizz'>
         {/* 1. Header  */}
-        <h1>SuperQuizz</h1>
+        <h1>Challenge the SuperQuizz</h1>
         {/* 2. Current Score  */}
         <h2>Score: {score}</h2>
 
@@ -120,7 +120,7 @@ export default function SuperQuizz({ setPath }) {
         )}
         { score === 5 ? <div>
                 <h3>Wow, i'm impress by D answer</h3>
-                <button onClick={() => setPath('/AreYou')}>Next</button>
+                <button className='buttonQuizz' onClick={() => setPath('/AreYou')}>Next</button>
                 </div> : ""}
     </div>
   )

@@ -49,12 +49,12 @@ export default function Simon({ setPath }) {
   }, [isOn, play.isDisplay, play.colors.length])
 
   async function displayColors(){
-    await timeout(1000);
+    await timeout(500);
     for(let i = 0; i< play.colors.length; i++){
       setFlashColor(play.colors[i]);
-      await timeout(1000);
+      await timeout(500);
       setFlashColor("");
-      await timeout(1000);
+      await timeout(500);
 
       if(i === play.colors.length - 1){
         const copyColors = [...play.colors];
@@ -82,15 +82,15 @@ export default function Simon({ setPath }) {
         if(copyUserColors.length){
           setPlay({...play, userColors:copyUserColors})
         }else{
-          await timeout(1000);
+          await timeout(500);
           setPlay({...play, isDisplay:true, userPlay:false, score:play.colors.length, userColors:[]})
         }
         
       }else{
-        await timeout(1000);
+        await timeout(500);
         setPlay({...initPLay, score:play.colors.length})
       }
-      await timeout(1000);
+      await timeout(500);
       setFlashColor("");
     }
   }
@@ -100,7 +100,7 @@ export default function Simon({ setPath }) {
   }
 
   return (
-    <div className='bg-black'>
+    <div className='backgroundSimon'>
       <h3 className='textSimon'>Follow instructions and take your time !</h3>
       <div className='cardWrapper'>
         {
@@ -119,9 +119,9 @@ export default function Simon({ setPath }) {
       { isOn && (play.isDisplay || play.userPlay) && (
         <div className='score'>{play.score}</div>
       )}
-      {play.score === 1 ? <div>
+      {play.score >= 0 ? <div className='next'>
         <h3>Beginner's luck, move on</h3>
-        <button onClick={() => setPath('/Snake')}>Next</button>
+        <button className='nextButton' onClick={() => setPath('/Snake')}>Next</button>
         </div> : ""}
     </div>
   )

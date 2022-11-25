@@ -8,6 +8,7 @@ import {
   SPEED,
   DIRECTIONS
 } from "./compoSnake/constants";
+import './snake.css';
 
 export default function Snake({ setPath }) {
     const canvasRef = useRef();
@@ -85,23 +86,23 @@ export default function Snake({ setPath }) {
     }, [snake, apple, gameOver]);
   
     return (
-        <div>
+        <div className="backgroundSnake">
             <h3>Not a simply Snake, it's a superFastSnake ! Good luck !</h3>
             <div role="button" tabIndex="0" onKeyDown={e => moveSnake(e)}>
                 <canvas
+                className="areaSnake"
                 style={{ border: "1px solid black" }}
                 ref={canvasRef}
                 width={`${CANVAS_SIZE[0]}px`}
                 height={`${CANVAS_SIZE[1]}px`}
                 />
-                {gameOver && <div>GAME OVER!</div>}
-                <button onClick={startGame}>Start Game</button>
-                { snake.length >= 8 ? <div>
-                <h3>Not so bad</h3>
-                <button onClick={() => setPath('/CatSpace')}>Next</button>
-                </div> : ""}
+                {gameOver && <h3>GAME OVER!</h3>}
+                <button className="buttonSnake" onClick={startGame}>Start Game</button>
             </div>
-            
+            { snake.length >= 8 ? <div>
+              <h3>Not so bad !</h3>
+              <button className="buttonSnake" onClick={() => setPath('/CatSpace')}>Next</button>
+              </div> : ""}
         </div>
       
     );
