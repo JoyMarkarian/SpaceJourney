@@ -22,7 +22,7 @@ export default function Accueil({ setPath }) {
                   cristaux alimentant le saut spatial ont grillés. Heureusement
                   pour toi, tu te retrouve dans une constellation ou les
                   planètes regorgent de ces cristaux manquants.
-                  A toi de les trouver!!
+                  A toi de jouer, n'oublie pas de renseigner ton nom pour pouvoir jouer !!
                 </p>
                 <div className="alienDiscours"></div>
               </div>
@@ -40,7 +40,7 @@ export default function Accueil({ setPath }) {
               onChange={handlePseudo}
             />
             <div>
-              <button onClick={() => setPath('/map')} className="validatePseudo" type="button">
+              <button onClick={(event) => event=(userPseudo ? setPath('/map') : setPath('/'))} className="validatePseudo" type="button">
                 Validate
               </button>
             </div>
