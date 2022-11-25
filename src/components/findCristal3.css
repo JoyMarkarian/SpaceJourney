@@ -25,9 +25,10 @@
     color: black;
     top: 150px;
     right: 428px;
-    background-color: rgb(255, 255, 255);
-    padding: 100px;
+    background-color: #f792f0d1;
+    padding: 60px;
     width: 300px;
+    border-radius: 130px
 }
 
 .myCristal3{
@@ -46,6 +47,11 @@
     color: black;
     top: 150px;
     right: 328px;
-    background-color: rgb(255, 255, 255);
+    background-color: #f792f0d1;
     padding: 100px;
+    border-radius: 130px;
 }
+
+.btn-cristal-3 {
+    background-color: #9638a3;
+ }

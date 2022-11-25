@@ -25,9 +25,10 @@
     color: black;
     top: 150px;
     right: 428px;
-    background-color: rgb(255, 255, 255);
-    padding: 100px;
+    background-color: rgb(224 96 68/ 87%);
+    padding: 60px;
     width: 300px;
+    border-radius: 130px;
 }
 .myCristal {
     background-image: url('src/assets/crystal-1.png');
@@ -45,6 +46,11 @@
     color: black;
     top: 150px;
     right: 328px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(224 96 68/ 87%);
     padding: 100px;
+    border-radius: 130px;
 }
+
+ .btn-cristal-1 {
+    background-color: #edd343;
+ }
