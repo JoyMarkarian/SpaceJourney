@@ -54,3 +54,14 @@
 .backToEarthButton{
     position: absolute;
 }
+
+.rocket-bg{
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144 218 218);
+}
