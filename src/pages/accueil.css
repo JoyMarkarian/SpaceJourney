@@ -15,14 +15,18 @@
 }
 
 .inputPseudo {
-  background-color: #f1fbff;
+  background-color:#FBEFF7 ;
   justify-content: center;
   padding: 20px;
   font-size: 2rem;
-  /* height: 200px;
-  width: 200px; */
   color: #d542c6;
+  border-color: #d542c6;
+  border: 10px;
+  border-radius: 20px;
+  border: 10px solid #d542c6;
+  opacity: 0.9;
 }
+
 .inputPseudo::placeholder{
   color: #d542c6;
 }
@@ -41,10 +45,20 @@ bottom: 100px;
 }
 
 .home-validateButton{
-  background-color: #f1fbff;
-  color: #d542c6;
+  background-color: #d542c6;
+  color: #FBEFF7;
   margin-bottom: 40px;
   margin-top: 20px;
   font-size: 2rem;
-  width: 75%;
+  width: 50%;
+}
+
+.home-validateButton:hover{
+  background-color: #FBEFF7;
+  color: #d542c6;
+  border: none;
+}
+
+.button-goToMap{
+  width: 30%;
 }

@@ -2,15 +2,16 @@
 {
 position: absolute;
 top: 220px;
-left: 420px;
-width: 400px;
+left: 320px;
+width: 500px;
 height: 250px;
 padding: 7px;
-background: #FFFFFF;
+background: #FBEFF7;
 -webkit-border-radius: 59px;
 -moz-border-radius: 59px;
 border-radius: 59px;
-border: #7F7F7F solid 9px;
+border: #d542c6 solid 9px;
+opacity: 0.9;
 }
 
 .bubble:after
@@ -19,7 +20,7 @@ content: '';
 position: absolute;
 border-style: solid;
 border-width: 10px 0 10px 47px;
-border-color: transparent #FFFFFF;
+border-color: transparent #FBEFF7;
 display: block;
 width: 0;
 z-index: 1;
@@ -33,7 +34,7 @@ content: '';
 position: absolute;
 border-style: solid;
 border-width: 18px 0 18px 55px;
-border-color: transparent #7F7F7F;
+border-color: transparent #d542c6;
 display: block;
 width: 0;
 z-index: 0;
@@ -43,5 +44,7 @@ top: 49px;
 
 .text-bubble{
     padding: 1rem;
-    color: black;
+    color: #d542c6;
+    font-size: 30px;
+    line-height: 120% ;
 }
