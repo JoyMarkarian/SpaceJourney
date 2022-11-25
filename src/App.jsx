@@ -46,9 +46,13 @@ export default function App() {
       {path === 'planet-3' && <FindCristal3 checkQuest={checkQuest} setPath={setPath} setPlanet3isIsClickable={setPlanet3isIsClickable} planet3isIsClickable={planet3isIsClickable} />}
 
       {path === 'planet-4' && <FindCristal4 checkQuest={checkQuest} setPath={setPath} setPlanet4isIsClickable={setPlanet4isIsClickable} planet4isIsClickable={planet4isIsClickable} />}
-
+      {path === '/' && <Dont_touch setPath={setPath} />}
+      {path === '/Simon' && <Simon setPath={setPath} />}
+      {path === '/Snake' && <Snake setPath={setPath} />}
+      {path === '/CatSpace' && <CatSpace setPath={setPath} />}
+      {path === '/SuperQuizz' && <SuperQuizz setPath={setPath} />}
+      {path === '/AreYou' && <AreYou setPath={setPath} />}
       {path === 'final-page' && <FinalPage userPseudo={userPseudo} />}
-
     </div>
   );
 }

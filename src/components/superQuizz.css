@@ -1,3 +1,14 @@
+.backgroundQuizz{
+  padding-top: 30px;
+  background-image: url("../assets/galaxyaccueil.jpg");
+  background-size: cover;
+  height: 800px;
+  width: 1280px;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+
 .question-card {
     /* Center the div  */
     margin: 0 auto;
@@ -29,7 +40,7 @@
   }
   
   .question-text {
-    color: darkblue;
+    color: purple;
     font-size: 24px;
   }
   
@@ -54,7 +65,7 @@
   }
   
   .buttonQuizz {
-    background-color: red; /* Green */
+    background-color: purple; /* Green */
     border: none;
     color: white;
     padding: 16px 24px;

@@ -1,5 +1,19 @@
+.backgroundSimon{
+  background-image: url("../assets/galaxyaccueil.jpg");
+  background-size: cover;
+  height: 800px;
+  width: 1280px;
+}
+
 .textSimon{
+  padding-top: 50px;
   color: white;
+  text-align: center;
+}
+
+.cardWrapper{
+  align-items: center;
+  margin: auto;
 }
 
 .row {
@@ -68,6 +82,16 @@
   
   .btn:focus,.btn:active {
      outline: none !important;
+  }
+
+  .next{
+    text-align: center;
+    color: white;
+  }
+
+  .nextButton{
+    background-color: purple;
+    color: white;
   }
   
   

@@ -16,14 +16,14 @@
 .startButton{
     position: relative;
     bottom: 220px;
-    left: 150px;
+    left: 590px;
     width: 100px;
 }
 
 .score{
     position: relative;
     bottom: 250px;
-    left: 150px;
+    left: 590px;
     width: 100px;
     height: 100px;
     background-color: black;
@@ -47,6 +47,8 @@
     align-items: center;
     flex-direction: column;
     color:white;
+    bottom: 400px;
+    left: 440px;
 }
 
 .flash.flash{
