@@ -24,7 +24,6 @@ export default function FindCristal1({ checkQuest, setPlanet1isIsClickable, setP
       <button onClick={() => setdisplayCrystal(!displayCrystal)} aria-label="crystal-1" className="myCristal-toFind" type="button" />
       {displayRules && (
       <div className='myCrystal-container'>
-        <div className='' />
         <h2>Crait was a distant planet in the galaxy. This world was rich in minerals, including red rhodochrosite, crystals essential for the use of hyperspeed! Here we go, we must find the crystal hidden in this picture.</h2>
         <button onClick={dNoneRules} type='button' className="btn-cristal-1">Search it</button>
       </div>
