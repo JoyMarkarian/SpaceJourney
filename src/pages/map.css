@@ -128,3 +128,12 @@
 .planet-rules span{
     font-weight: bolder;
 }
+
+.search-crystal-container{
+    display: flex;
+}
+ .crystal-imgSize{
+    margin-left: 20px;
+    height: 100px;
+    width: 100px;
+ }
