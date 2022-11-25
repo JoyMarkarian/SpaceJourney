@@ -10,10 +10,11 @@ function App() {
     { planet: false },
     { planet: false },
   ]);
+  
   return (
     <div>
-      <Map isClickable={isClickable} />
-      <Dont_touch />
+      {/* <Map isClickable={isClickable} />
+      <Dont_touch /> */}
       <Simon />
     </div>
   );
