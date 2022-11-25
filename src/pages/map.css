@@ -21,7 +21,16 @@
     height: 13em;
     width: 13em;
     background: none;
-}
+    display: block;
+    width: 200px; height: 200px;
+    margin: calc(((204px * 1.4142) - 204px) / 2);
+    animation: example 26s linear 0s infinite;
+    }
+@keyframes example {
+    from { transform: rotate(5deg); }
+    to { transform: rotate(360deg); }
+    }
+
 
 .notClickable-planet {
     display: flex;
