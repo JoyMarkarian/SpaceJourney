@@ -30,15 +30,9 @@
 }
 
 .myCristal4{
-    background: none;
     background-image: url('src/assets/crystal-4.png');
-    background-position: center;
-    background-size: cover;
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    top: 30px;
-    right: 328px;
+    height: 300px;
+    width: 300px;
 }
 
 .well-done4{
