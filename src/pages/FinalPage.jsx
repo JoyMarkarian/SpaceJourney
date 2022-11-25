@@ -7,9 +7,18 @@ function FinalPage({ userPseudo, setPath }) {
   const [displayRocket, setDisplayRocket] = useState(false);
   return (
     <div>
-      {displayRocket && <div className='rocket-bg'>
-        <iframe src="https://giphy.com/embed/sGBMzyeEzKpySD74qv" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      </div>}
+      {displayRocket && (
+        <div className="rocket-bg">
+          <iframe
+            src="https://giphy.com/embed/sGBMzyeEzKpySD74qv"
+            width="480"
+            height="360"
+            frameBorder="0"
+            class="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
       <div className="finalpage-cockpit">
         <div className='final-msg'>
           <p>Finally the rocket is fixed <strong>{userPseudo}</strong> can return to Earth!</p>
@@ -21,7 +30,6 @@ function FinalPage({ userPseudo, setPath }) {
         </div>
       </div>
     </div>
-
   );
 }
 

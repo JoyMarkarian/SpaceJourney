@@ -42,9 +42,24 @@ right: -64px;
 top: 49px;
 }
 
-.text-bubble{
+.text-bubble-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-bubble {
     padding: 1rem;
+    margin: 0;
     color: #d542c6;
     font-size: 30px;
     line-height: 120% ;
+}
+.home-next-button {
+    width: 40%;
+    color: #d542c6;
+    background: none;
+    border: 2px solid #d542c6;
+    font-size: 1.5rem;
 }

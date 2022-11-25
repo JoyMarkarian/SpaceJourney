@@ -20,7 +20,8 @@ export default function Accueil({ setPath, setUserPseudo, userPseudo }) {
   };
 
   function handlePseudo(event) {
-    if (event.target.value.length <= MAX_LENGTH) {
+    if (event.target.value.length <= MAX_LENGTH)
+    {
       setUserPseudo(event.target.value);
     }
   }
@@ -54,31 +55,33 @@ export default function Accueil({ setPath, setUserPseudo, userPseudo }) {
                   <div className="alienDiscours">
                     <div className="bubble">
                       {nextText1 === true && (
-                        <>
+                        <div className="text-bubble-container">
                           <p className="text-bubble">
                             Nooooo <strong>{userPseudo}</strong> ! Your vacation
-                            is ruined, you ran out of hyperspeed! your four
-                            crystals powering the space jump have burned out.
+                            is ruined, you ran out of hyperspeed! Your <strong>four
+                              crystals</strong> powering the space jump have burned out.
                           </p>
-                          <button onClick={dText1} type="button">
+                          <button onClick={dText1} type="button" className="home-next-button">
                             next
                           </button>
-                        </>
+                        </div>
                       )}
                       {nextText2 === true && (
-                        <>
+                        <div className="text-bubble-container">
                           <p className="text-bubble">
                             Fortunately for you, you find yourself in a
                             constellation where the planets are teeming with
                             these missing crystals.
                           </p>
-                          <button onClick={dText2} type="button">
+                          <button className="home-next-button" onClick={dText2} type="button">
                             next
                           </button>
-                        </>
+                        </div>
                       )}
                       {nextText3 === true && (
-                        <p className="text-bubble">Your turn !!</p>
+                        <div className="text-bubble-container">
+                          <p className="text-bubble">It's up to you to find them!!</p>
+                        </div>
                       )}
                       <div className="alienDiscours" />
                     </div>
@@ -93,13 +96,15 @@ export default function Accueil({ setPath, setUserPseudo, userPseudo }) {
             )}
             {displayUser && userPseudo && (
               <div>
-                <button
-                  onClick={() => setPath("/map")}
-                  className="home-validateButton button-goToMap"
-                  type="button"
-                >
-                  Let's go !
-                </button>
+                {nextText3 && (
+                  <button
+                    onClick={() => setPath("/map")}
+                    className="home-validateButton button-goToMap"
+                    type="button"
+                  >
+                    Let's go !
+                  </button>
+                )}
               </div>
             )}
           </div>
