@@ -110,16 +110,16 @@ export default function Simon({ setPath }) {
       {isOn && !play.isDisplay && !play.userPlay && play.score && (
         <div className='lost'>
           <div>Finalscore : {play.score - 1}</div>
-          <button onClick={closeHandle}>Close</button>
+          <button className='closeButton' onClick={closeHandle}>Close</button>
         </div>
       )}
       {!isOn && !play.score && (
-        <button onClick={startHandle} className='startButton'>Start</button>
+        <button className='startButton' onClick={startHandle}>Start</button>
       )}
       { isOn && (play.isDisplay || play.userPlay) && (
         <div className='score'>{play.score}</div>
       )}
-      {play.score >= 0 ? <div className='next'>
+      {play.score >= 5 ? <div className='next'>
         <h3>Beginner's luck, move on</h3>
         <button className='nextButton' onClick={() => setPath('/Snake')}>Next</button>
         </div> : ""}
