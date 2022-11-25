@@ -4,7 +4,10 @@ import "../components/bubble.css";
 
 export default function Accueil() {
   const [userPseudo, setUserPseudo] = useState();
-  const [changePseudo, setChangePseudo] = useState("");
+
+  function handlePseudo(event) {
+    setUserPseudo(event.target.value);
+  };
 
   return (
     <div>
@@ -14,11 +17,11 @@ export default function Accueil() {
             <div className="alienDiscours">
               <div className="bubble">
                 <p>
-                  C’est l’histoire de Julien, terrien, qui lors de ses vacances,
-                  tombe en panne d’hypervitesse. Malheureusement, ses quatre
+                  C’est ton histoire {userPseudo}, terrien, qui lors de tes vacances,
+                  tu tombe en panne d’hypervitesse. Malheureusement, tes quatre
                   cristaux alimentant le saut spatial ont grillés. Heureusement
-                  pour lui, il s’est retrouvé dans une constellation ou les
-                  planètes regorgent des cristaux manquants.
+                  pour toi, tu te retrouve dans une constellation ou les
+                  planètes regorgent de ces cristaux manquants.
                 </p>
                 <div className="alienDiscours"></div>
               </div>
@@ -33,7 +36,7 @@ export default function Accueil() {
               type="text"
               value={userPseudo}
               placeholder="Choose your username"
-              onChange={changePseudo}
+              onChange={handlePseudo}
             />
             <div>
               <button className="validatePseudo" type="button">

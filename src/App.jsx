@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Accueil from './pages/Accueil';
 import FindCristal1 from './components/FindCristal1';
 import FindCristal2 from './components/FindCristal2';
 import FindCristal3 from './components/FindCristal3';
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <div>
+      <Accueil />
       {path === '/' && <Map planet1isIsClickable={planet1isIsClickable} planet2isIsClickable={planet2isIsClickable} planet3isIsClickable={planet3isIsClickable} setPath={setPath} />}
       {path === 'planet-1' && <FindCristal1 checkQuest={checkQuest} planet1isIsClickable={planet1isIsClickable} setPlanet1isIsClickable={setPlanet1isIsClickable} setPath={setPath} />}
       
