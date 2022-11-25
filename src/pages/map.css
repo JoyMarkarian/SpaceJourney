@@ -70,15 +70,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #00053F;
-    height: 8em;
-    width: 30em;
+    color: #000327;
+    height: 12em;
+    width: 20em;
     top: 30vh;
     left: 50px;
     z-index: 1;
-    background-color: #2863C7;
-    opacity: 0.8;
-    font-size: 20px;
+    background-color: #3e81f5;
+    opacity: 0.9;
+    font-size: 1.5rem;
 }
 
 .button-backToHome {
