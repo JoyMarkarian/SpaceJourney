@@ -1,0 +1,38 @@
+.accueil{
+  background-image: url("../assets/galaxyaccueil.jpg");
+  background-size: cover;
+  height: 800px;
+  width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.inputPseudo {
+  background-color: #FF4EED;
+  justify-content: center;
+  height: 40px;
+  width: 200px;
+}
+
+.alienDiscours {
+  margin-bottom: -49%;
+  margin-left: 80%;
+}
+
+.pictureAstro {
+  position: absolute;
+  height: 25rem;
+  top: 240px;
+  left: 1000px;
+}
+
+.validatePseudo{
+  background-color: #FF4EED;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-left: 27%;
+  display: flex;
+  align-items: flex-end;
+}

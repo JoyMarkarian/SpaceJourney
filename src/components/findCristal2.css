@@ -1,0 +1,57 @@
+.findCristalBg2{
+    background-image: url('./src/assets/bg-planet-2.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height: 800px;
+    width: 1500px;
+    position: relative;
+}
+
+.myCristal-toFind2{
+    background: none;
+    background-image: url('src/assets/crystal-2.png');
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 526px;
+    right: 1304px;
+    opacity: 30%;
+}
+
+.myCrystal-container2{
+    position: absolute;
+    color: black;
+    top: 150px;
+    right: 428px;
+    background-color: rgb(243 194 255 / 87%);
+    border-radius: 130px;
+    padding: 100px;
+    width: 300px;
+}
+
+.myCristal2{
+    background-image: url('src/assets/crystal-2.png');
+    height: 300px;
+    width: 300px;
+}
+
+.well-done2{
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: black;
+    top: 150px;
+    right: 328px;
+    background-color: rgb(243 194 255 / 87%);
+    padding: 60px;
+    border-radius: 130px;
+}
+
+.btn-cristal-2 {
+    background-color: #a567f5;
+ }
