@@ -23,7 +23,10 @@ export default function FindCristal3({ checkQuest, setPlanet3isIsClickable, setP
       {displayRules && (
       <div className="myCrystal-container3">
         <h2 className="planet-rules">New world of the Asgard, it is rich in neutronium, key element of the Asgard technology. It is on this planet that the Asgard are rebuilding their world, hidden from view. We should be able to <span>find the 3rd crystal on this planet</span>.</h2>
-        <button onClick={dNoneRules} type="button" className="btn-cristal-3">Search it</button>
+        <div className="search-crystal-container">
+          <button onClick={dNoneRules} type="button" className="btn-cristal-3">Search it</button>
+          <img className="crystal-imgSize" src="./src/assets/crystal-3.png" alt="" />
+        </div>
       </div>
       )}
       {displayCrystal && (

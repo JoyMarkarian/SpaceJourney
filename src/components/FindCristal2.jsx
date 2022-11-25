@@ -25,7 +25,10 @@ export default function FindCristal2({ checkQuest, setPlanet2isIsClickable, setP
       <div className='myCrystal-container2'>
         <div className='' />
         <h2 className='planet-rules'>The home world of the ancients, once home to a society descended from the gods. Destroyed by the Wraiths, it is now a vast field of ruins. This planet is known for its abundance of violet crystal. <span>Will you find it</span>?</h2>
-        <button onClick={dNoneRules} type='button' className="btn-cristal-2">Search it</button>
+        <div className="search-crystal-container">
+          <button onClick={dNoneRules} type='button' className="btn-cristal-2">Search it</button>
+          <img className="crystal-imgSize" src="./src/assets/crystal-2.png" alt="" />
+        </div>
       </div>
       )}
       {displayCrystal && (
