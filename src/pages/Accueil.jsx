@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./accueil.css";
 import "../components/bubble.css";
 
-export default function Accueil({ setPath }) {
-  const [userPseudo, setUserPseudo] = useState("");
+export default function Accueil({ setPath, setUserPseudo, userPseudo }) {
   const [displayUser, setDisplayUser] = useState(false);
 
   function handlePseudo(event) {

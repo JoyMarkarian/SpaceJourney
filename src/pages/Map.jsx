@@ -2,9 +2,8 @@
 import React, { useState } from 'react';
 
 // eslint-disable-next-line react/prop-types
-function Map({ planet1isIsClickable, planet2isIsClickable, planet3isIsClickable, setPath }) {
+function Map({ planet1isIsClickable, planet2isIsClickable, planet3isIsClickable, planet4isIsClickable, setPath }) {
   const [displayModal, setDisplayModal] = useState(false);
-  console.log(planet3isIsClickable);
 
   const handleDisplayModal = () => {
     setDisplayModal(!displayModal);
@@ -17,6 +16,7 @@ function Map({ planet1isIsClickable, planet2isIsClickable, planet3isIsClickable,
       <button aria-label="planet-2" type="button" className={`map-planet-2 ${planet1isIsClickable === true ? 'map-planet' : 'notClickable-planet'}`} onClick={planet1isIsClickable ? () => setPath('planet-2') : handleDisplayModal} />
       <button aria-label="planet-3" type="button" className={`map-planet-3 ${planet2isIsClickable === true ? 'map-planet' : 'notClickable-planet'}`} onClick={planet2isIsClickable ? () => setPath('planet-3') : handleDisplayModal} />
       <button aria-label="planet-4" type="button" className={`map-planet-4 ${planet3isIsClickable === true ? 'map-planet' : 'notClickable-planet'}`} onClick={planet3isIsClickable ? () => setPath('planet-4') : handleDisplayModal} />
+      {planet4isIsClickable && <button onClick={() => setPath('final-page')} className='button-backToHome' type='button'>Back to home!</button>}
     </div>
   );
 }
