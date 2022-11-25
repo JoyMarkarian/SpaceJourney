@@ -108,3 +108,9 @@
     z-index: 1;
     font-size: 2rem;
 }
+.planet-rules{
+    line-height: 2.5rem;
+}
+.planet-rules span{
+    font-weight: bolder;
+}
