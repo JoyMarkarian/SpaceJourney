@@ -1,38 +1,50 @@
 .accueil{
   background-image: url("../assets/galaxyaccueil.jpg");
   background-size: cover;
-  height: 800px;
-  width: 1500px;
+  height: 750px;
+  width: 1300px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+}
+
+.choose-pseudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .inputPseudo {
-  background-color: #FF4EED;
+  background-color: #f1fbff;
   justify-content: center;
-  height: 40px;
-  width: 200px;
+  padding: 20px;
+  font-size: 2rem;
+  /* height: 200px;
+  width: 200px; */
+  color: #d542c6;
 }
-
-.alienDiscours {
-  margin-bottom: -49%;
-  margin-left: 80%;
+.inputPseudo::placeholder{
+  color: #d542c6;
 }
 
 .pictureAstro {
   position: absolute;
   height: 25rem;
-  top: 240px;
-  left: 1000px;
+  top: 140px;
+  left: 900px;
+}
+.button-goToMap{
+position: absolute;
+width: 300px!important;
+left: 460px;
+bottom: 100px;
 }
 
-.validatePseudo{
-  background-color: #FF4EED;
-  color: white;
+.home-validateButton{
+  background-color: #f1fbff;
+  color: #d542c6;
   margin-bottom: 40px;
   margin-top: 20px;
-  margin-left: 27%;
-  display: flex;
-  align-items: flex-end;
+  font-size: 2rem;
+  width: 75%;
 }

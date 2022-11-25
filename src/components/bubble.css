@@ -1,10 +1,10 @@
 .bubble
 {
 position: absolute;
-top: 320px;
-left: 520px;
+top: 220px;
+left: 420px;
 width: 400px;
-height: 200px;
+height: 250px;
 padding: 7px;
 background: #FFFFFF;
 -webkit-border-radius: 59px;
@@ -39,4 +39,9 @@ width: 0;
 z-index: 0;
 right: -64px;
 top: 49px;
+}
+
+.text-bubble{
+    padding: 1rem;
+    color: black;
 }
