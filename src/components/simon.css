@@ -1,0 +1,74 @@
+.textSimon{
+  color: white;
+}
+
+.row {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .pad-btn {
+    border-radius: 5%;
+    height: 100px;
+    width: 100px;
+    font-size: 48px;
+    margin: 2px;
+  }
+  
+  .row-pad {
+    text-align: center;
+    padding: 1px;
+  }
+  
+  .pad {
+    border-radius: 5%;
+    padding: 4px;
+    background: black;
+    width: 215px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;  
+  }
+  
+  .red {
+    background-color: #ff3c41 !important;
+  }
+  
+  .yellow {
+    background-color: yellow !important;
+  }
+  
+  
+  .blue {
+    background-color: LightBlue !important;
+  }
+  
+  
+  .green {
+    background-color: #00ff00 !important;
+  }
+  
+  .controls {
+    height: 30px;
+    width: 40px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  
+  .game-controls {
+    height: 40px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  .counter {
+    width: 40px;
+  }
+  
+  .btn:focus,.btn:active {
+     outline: none !important;
+  }
+  
+  
+  

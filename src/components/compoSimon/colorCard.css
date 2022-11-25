@@ -1,0 +1,88 @@
+.colorCard{
+    height: 200px;
+    width: 200px;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.cardWrapper{
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+.startButton{
+    position: relative;
+    bottom: 220px;
+    left: 150px;
+    width: 100px;
+}
+
+.score{
+    position: relative;
+    bottom: 250px;
+    left: 150px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    line-height: 100px;
+    font-size: 50px;
+    color:white;
+    text-align: center;
+}
+
+.lost{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border-radius: 50%;
+    line-height: 100px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+}
+
+.flash.flash{
+    border: 3px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.red{
+    background-color: red;
+}
+
+.red.flash{
+    background-color: rgb(255,125,125);
+}
+
+.blue{
+    background-color: blue;
+}
+
+.blue.flash{
+    background-color: rgb(125,125,255);
+}
+
+.green{
+    background-color: green;
+}
+
+.green.flash{
+    background-color: rgb(125,255,125);
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.yellow.flash{
+    background-color: rgb(255,255,125);
+}

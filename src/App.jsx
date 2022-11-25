@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
+
+import AreYou from './components/AreYou';
+import CatSpace from './components/CatSpace';
+import Dont_touch from './components/Dont_touch';
+import Simon from './components/Simon';
+import Snake from './components/Snake';
+import SuperQuizz from './components/SuperQuizz';
+
 import Accueil from './pages/Accueil';
 import FindCristal1 from './components/FindCristal1';
 import FindCristal2 from './components/FindCristal2';
 import FindCristal3 from './components/FindCristal3';
 import FindCristal4 from './components/FindCristal4';
+
 import Map from './pages/Map';
 import './pages/map.css';
 import './App.css';
