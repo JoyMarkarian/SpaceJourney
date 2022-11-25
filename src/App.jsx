@@ -18,12 +18,6 @@ function App() {
   return (
     <div>
       <Map isClickable={isClickable} />
-      <Dont_touch />
-      <Simon />
-      <Snake />
-      <CatSpace />
-      <SuperQuizz />
-      <AreYou />
     </div>
   );
 }
