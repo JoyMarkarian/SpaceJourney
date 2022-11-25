@@ -10,7 +10,7 @@
 }
 
 .final-msg {
-    background-color: aliceblue;
+    background-color: #DC9AA5;
     position: absolute;
     top: 100px;
     left: 50px;
@@ -19,14 +19,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #012B48;
     height: 300px;
     width: 400px;
     padding: 20px;
 }
 
 .dontTouch-msg {
-    background-color: aliceblue;
+    background-color: #DC9AA5;
     position: absolute;
     top: 100px;
     right: 50px;
@@ -35,7 +35,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #012B48;
     height: 300px;
     width: 400px;
     padding: 20px;
@@ -53,6 +53,9 @@
 }
 .backToEarthButton{
     position: absolute;
+    background-color: #2C5FB6;
+    color: #10003F;
+    font-size: 25px;
 }
 
 .rocket-bg{

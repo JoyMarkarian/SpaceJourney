@@ -3,7 +3,13 @@ import React, { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
 
-function Map({ planet1isIsClickable, planet2isIsClickable, planet3isIsClickable, planet4isIsClickable, setPath }) {
+function Map({
+  planet1isIsClickable,
+  planet2isIsClickable,
+  planet3isIsClickable,
+  planet4isIsClickable,
+  setPath,
+}) {
   const [displayModal, setDisplayModal] = useState(false);
   const handleDisplayModal = () => {
     setDisplayModal(!displayModal);
