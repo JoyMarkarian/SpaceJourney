@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AreYou from './components/AreYou';
 import CatSpace from './components/CatSpace';
 import Dont_touch from './components/Dont_touch';
 import Simon from './components/Simon';
@@ -22,6 +23,7 @@ function App() {
       <Snake />
       <CatSpace />
       <SuperQuizz />
+      <AreYou />
     </div>
   );
 }

@@ -102,7 +102,7 @@ export default function Simon() {
 
   return (
     <div className='bg-black'>
-      <h3>Follow instructions and Just Do It !</h3>
+      <h3 className='textSimon'>Follow instructions and take your time !</h3>
       <div className='cardWrapper'>
         {
           colorList && colorList.map((v, i) => (<ColorCard onClick={()=>{cardClickHandle(v)}} flash={flashColor === v} color={v} />) )
