@@ -5,7 +5,7 @@ import timeout from './utilsSimon/util';
 import './compoSimon/colorCard.css';
 import './simon.css';
 
-export default function Simon() {
+export default function Simon({ setPath }) {
   //code de https://www.youtube.com/watch?v=EGRAKMNkyFg
   const [isOn, setIsOn] = useState(false);
 
@@ -119,7 +119,10 @@ export default function Simon() {
       { isOn && (play.isDisplay || play.userPlay) && (
         <div className='score'>{play.score}</div>
       )}
-      
+      {play.score === 1 ? <div>
+        <h3>Beginner's luck, move on</h3>
+        <button onClick={() => setPath('/Snake')}>Next</button>
+        </div> : ""}
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './areYou.css';
 
-export default function AreYou() {
+export default function AreYou({ setPath }) {
 
     const [choice, setChoice] = useState(false);
 
@@ -13,7 +13,7 @@ export default function AreYou() {
     <div className='backgroundGlitch'>
         <h3 className="glitch" data-text="Are you still here ?">Are you still here ?</h3>
         <div>
-            <button>Yes</button>
+            <button onClick={() => setPath('/')}>Yes</button>
             <button onClick={handleChoice}>No</button>
             {choice ? <div>
                 <audio autoPlay src="src/assets/sound/screamScarry.mp3"></audio>

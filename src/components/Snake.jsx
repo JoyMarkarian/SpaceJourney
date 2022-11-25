@@ -9,7 +9,7 @@ import {
   DIRECTIONS
 } from "./compoSnake/constants";
 
-export default function Snake() {
+export default function Snake({ setPath }) {
     const canvasRef = useRef();
     const [snake, setSnake] = useState(SNAKE_START);
     const [apple, setApple] = useState(APPLE_START);
@@ -86,7 +86,7 @@ export default function Snake() {
   
     return (
         <div>
-            <h3>Jeu du Snake</h3>
+            <h3>Not a simply Snake, it's a superFastSnake ! Good luck !</h3>
             <div role="button" tabIndex="0" onKeyDown={e => moveSnake(e)}>
                 <canvas
                 style={{ border: "1px solid black" }}
@@ -96,7 +96,12 @@ export default function Snake() {
                 />
                 {gameOver && <div>GAME OVER!</div>}
                 <button onClick={startGame}>Start Game</button>
+                { snake.length >= 8 ? <div>
+                <h3>Not so bad</h3>
+                <button onClick={() => setPath('/CatSpace')}>Next</button>
+                </div> : ""}
             </div>
+            
         </div>
       
     );

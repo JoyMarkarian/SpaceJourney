@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './dont_touch.css'
 
-export default function Dont_touch() {
+export default function Dont_touch({ setPath }) {
+
   return (
     <div className="tuVeuxVraimentCliquer">
-      <button className="nonNeRegardePas">DON'T TOUCH</button>
+      <button className="nonNeRegardePas" onClick={() => setPath('/Simon')}>DON'T TOUCH</button>
     </div>
   )
 }
