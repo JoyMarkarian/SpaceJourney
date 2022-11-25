@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
-import './findCristal1.css';
+import React, { useState } from "react";
+import "./findCristal1.css";
 
 export default function FindCristal1({ checkQuest, setPlanet1isIsClickable, setPath }) {
   const [displayRules, setDisplayRules] = useState(true);
@@ -30,17 +30,25 @@ export default function FindCristal1({ checkQuest, setPlanet1isIsClickable, setP
       </div>
       )}
       {displayCrystal && (
-      <div className='myCrystal-container'>
-        <div className='myCristal' />
-        <h2>Well done ! You find the crystal !</h2>
-        <button onClick={dNoneCrystal} type='button' className="btn-cristal-1">Click here</button>
-      </div>
+        <div className="myCrystal-container">
+          <div className="myCristal" />
+          <h2>Well done ! You find the crystal !</h2>
+          <button
+            onClick={dNoneCrystal}
+            type="button"
+            className="btn-cristal-1"
+          >
+            Click here
+          </button>
+        </div>
       )}
       {displayWellDone && (
-      <div className="well-done">
-        <h2>Well done ! You can access the next planet !</h2>
-        <button onClick={checkQuest} type="button" className="btn-cristal-1">Back to map</button>
-      </div>
+        <div className="well-done">
+          <h2>Well done ! You can access the next planet !</h2>
+          <button onClick={checkQuest} type="button" className="btn-cristal-1">
+            Back to map
+          </button>
+        </div>
       )}
     </div>
   );
