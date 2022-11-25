@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./accueil.css";
 import "../components/bubble.css";
 
-export default function Accueil() {
+export default function Accueil({ setPath }) {
   const [userPseudo, setUserPseudo] = useState();
 
   function handlePseudo(event) {
@@ -22,6 +22,7 @@ export default function Accueil() {
                   cristaux alimentant le saut spatial ont grillés. Heureusement
                   pour toi, tu te retrouve dans une constellation ou les
                   planètes regorgent de ces cristaux manquants.
+                  A toi de les trouver!!
                 </p>
                 <div className="alienDiscours"></div>
               </div>
@@ -39,7 +40,7 @@ export default function Accueil() {
               onChange={handlePseudo}
             />
             <div>
-              <button className="validatePseudo" type="button">
+              <button onClick={() => setPath('/map')} className="validatePseudo" type="button">
                 Validate
               </button>
             </div>
