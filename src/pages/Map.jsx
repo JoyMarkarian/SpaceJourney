@@ -11,8 +11,12 @@ function Map({ planet1isIsClickable, planet2isIsClickable, planet3isIsClickable,
 
   return (
     <div className="map-bg">
-      {displayModal ? <button type="button" onClick={() => setDisplayModal(false)} className="map-not-possible">Cette planète n'est pas accessible pour le moment. Retrouve les
-          cristaux précédents afin de pouvoir poursuivre ta quête.</button> : ''}
+      {displayModal ? (
+        <button type="button" onClick={() => setDisplayModal(false)} className="map-not-possible">
+          Cette planète n'est pas accessible pour le moment. Retrouve les
+          cristaux précédents afin de pouvoir poursuivre ta quête.
+        </button>
+      ) : ''}
       <button aria-label="planet-1" type="button" className="map-planet map-planet-1" onClick={() => setPath('planet-1')} />
       <button aria-label="planet-2" type="button" className={`map-planet-2 ${planet1isIsClickable === true ? 'map-planet' : 'notClickable-planet'}`} onClick={planet1isIsClickable ? () => setPath('planet-2') : handleDisplayModal} />
       <button aria-label="planet-3" type="button" className={`map-planet-3 ${planet2isIsClickable === true ? 'map-planet' : 'notClickable-planet'}`} onClick={planet2isIsClickable ? () => setPath('planet-3') : handleDisplayModal} />
