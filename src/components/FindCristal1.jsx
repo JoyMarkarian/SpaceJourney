@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import './findCristal1.css';
 
-export default function FindCristal1({ checkQuest, planet1isIsClickable, setPlanet1isIsClickable, setPath }) {
+export default function FindCristal1({ checkQuest, setPlanet1isIsClickable, setPath }) {
   const [displayCrystal, setdisplayCrystal] = useState(false);
   const [displayWellDone, setDisplayWellDone] = useState(false);
 
