@@ -14,19 +14,19 @@ export default function FindCristal3({ checkQuest, setPlanet3isIsClickable, setP
 
   return (
     <div className="findCristalBg3">
-      <button onClick={() => setPath('/map')} aria-label="back to map" className="button-backToMap" type="button">Back to map</button>
+      <button onClick={() => setPath('/map')} aria-label="back to map" className="button-backToMap btn-cristal-3" type="button">Back to map</button>
       <button onClick={() => setdisplayCrystal(!displayCrystal)} aria-label="crystal-3" className="myCristal-toFind3" type="button" />
       {displayCrystal && (
       <div className="myCrystal-container3">
         <div className="myCristal3" />
         <h2>Well done ! You find the crystal !</h2>
-        <button onClick={dNoneCrystal} type="button">Click here</button>
+        <button onClick={dNoneCrystal} type="button" className='btn-cristal-3'>Click here</button>
       </div>
       )}
       {displayWellDone && (
       <div className="well-done3">
         <h2>Well done ! You can access the next planet !</h2>
-        <button onClick={checkQuest} type="button">Back to map</button>
+        <button onClick={checkQuest} type="button" className="btn-cristal-3">Back to map</button>
       </div>
       )}
     </div>

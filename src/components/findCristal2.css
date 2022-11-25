@@ -15,8 +15,9 @@
     height: 30px;
     width: 30px;
     position: absolute;
-    top: 30px;
-    right: 328px;
+    top: 526px;
+    right: 1304px;
+    opacity: 30%;
 }
 
 .myCrystal-container2{
@@ -24,7 +25,8 @@
     color: black;
     top: 150px;
     right: 428px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243 194 255 / 87%);
+    border-radius: 130px;
     padding: 100px;
     width: 300px;
 }
@@ -45,6 +47,11 @@
     color: black;
     top: 150px;
     right: 328px;
-    background-color: rgb(255, 255, 255);
-    padding: 100px;
+    background-color: rgb(243 194 255 / 87%);
+    padding: 60px;
+    border-radius: 130px;
 }
+
+.btn-cristal-2 {
+    background-color: #a567f5;
+ }
