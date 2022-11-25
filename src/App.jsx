@@ -3,6 +3,7 @@ import CatSpace from './components/CatSpace';
 import Dont_touch from './components/Dont_touch';
 import Simon from './components/Simon';
 import Snake from './components/Snake';
+import SuperQuizz from './components/SuperQuizz';
 import Map from './pages/Map';
 import './pages/map.css';
 
@@ -20,6 +21,7 @@ function App() {
       <Simon />
       <Snake />
       <CatSpace />
+      <SuperQuizz />
     </div>
   );
 }
