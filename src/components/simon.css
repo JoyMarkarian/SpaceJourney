@@ -46,21 +46,21 @@
   }
   
   .red {
-    background-color: #ff3c41 !important;
+    background-color: #470A60 !important;
   }
   
   .yellow {
-    background-color: yellow !important;
+    background-color: #FFD439 !important;
   }
   
   
   .blue {
-    background-color: LightBlue !important;
+    background-color: #4bb9ff !important;
   }
   
   
   .green {
-    background-color: #00ff00 !important;
+    background-color: #EF2F84 !important;
   }
   
   .controls {
@@ -102,6 +102,7 @@
   .closeButton{
     background-color: lightgray;
     color: black;
+    font-size: 25px;  
   }
   
   

@@ -94,14 +94,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: brown;
-    background-color: azure;
-    height: 300px;
-    width: 300px;
+    color: #FBEFF7;
+    background-color: #d542c6;
     top: 30vh;
     left: 50px;
     z-index: 1;
     font-size: 2rem;
+    width: 25%;
+}
+
+.button-backToHome:hover{
+    background-color: #FBEFF7;
+    color: #d542c6;
+    border: none;
 }
 
 .button-final-msg {

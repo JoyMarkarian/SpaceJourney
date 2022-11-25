@@ -20,8 +20,7 @@ export default function Accueil({ setPath, setUserPseudo, userPseudo }) {
   };
 
   function handlePseudo(event) {
-    if (event.target.value.length <= MAX_LENGTH)
-    {
+    if (event.target.value.length <= MAX_LENGTH) {
       setUserPseudo(event.target.value);
     }
   }
@@ -58,11 +57,16 @@ export default function Accueil({ setPath, setUserPseudo, userPseudo }) {
                         <div className="text-bubble-container">
                           <p className="text-bubble">
                             Nooooo <strong>{userPseudo}</strong> ! Your vacation
-                            is ruined, you ran out of hyperspeed! Your <strong>four
-                              crystals</strong> powering the space jump have burned out.
+                            is ruined, you ran out of hyperspeed! Your{" "}
+                            <strong>four crystals</strong> powering the space
+                            jump have burned out.
                           </p>
-                          <button onClick={dText1} type="button" className="home-next-button">
-                            next
+                          <button
+                            onClick={dText1}
+                            type="button"
+                            className="home-next-button"
+                          >
+                            Next
                           </button>
                         </div>
                       )}
@@ -73,14 +77,20 @@ export default function Accueil({ setPath, setUserPseudo, userPseudo }) {
                             constellation where the planets are teeming with
                             these missing crystals.
                           </p>
-                          <button className="home-next-button" onClick={dText2} type="button">
-                            next
+                          <button
+                            className="home-next-button"
+                            onClick={dText2}
+                            type="button"
+                          >
+                            Next
                           </button>
                         </div>
                       )}
                       {nextText3 === true && (
                         <div className="text-bubble-container">
-                          <p className="text-bubble">It's up to you to find them!!</p>
+                          <p className="text-bubble">
+                            It's up to you to find them !
+                          </p>
                         </div>
                       )}
                       <div className="alienDiscours" />

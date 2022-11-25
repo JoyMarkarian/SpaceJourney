@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import ColorCard from './compoSimon/colorCard';
-import timeout from './utilsSimon/util';
-import './compoSimon/colorCard.css';
-import './simon.css';
+import ColorCard from "./compoSimon/colorCard";
+import timeout from "./utilsSimon/util";
+import "./compoSimon/colorCard.css";
+import "./simon.css";
 
 export default function Simon({ setPath }) {
   //code de https://www.youtube.com/watch?v=EGRAKMNkyFg
@@ -14,49 +14,49 @@ export default function Simon({ setPath }) {
     isDisplay: false,
     colors: [],
     score: 0,
-    userPlay:false,
+    userPlay: false,
     userColors: [],
   };
 
   const [play, setPlay] = useState(initPLay);
   const [flashColor, setFlashColor] = useState("");
 
-  function startHandle () {
-    setIsOn(true)
+  function startHandle() {
+    setIsOn(true);
   }
 
-  useEffect(()=> {
-    if(isOn){
-      setPlay({...initPLay, isDisplay:true})
-    }else{
-      setPlay(initPLay)
+  useEffect(() => {
+    if (isOn) {
+      setPlay({ ...initPLay, isDisplay: true });
+    } else {
+      setPlay(initPLay);
     }
-  }, [isOn])
+  }, [isOn]);
 
-  useEffect(()=>{
-    if(isOn && play.isDisplay){
-      let newColor = colorList[Math.floor(Math.random()*4)];
+  useEffect(() => {
+    if (isOn && play.isDisplay) {
+      let newColor = colorList[Math.floor(Math.random() * 4)];
       const copyColors = [...play.colors];
-      copyColors.push(newColor)
-      setPlay({...play, colors:copyColors})
+      copyColors.push(newColor);
+      setPlay({ ...play, colors: copyColors });
     }
-  }, [isOn, play.isDisplay])
+  }, [isOn, play.isDisplay]);
 
-  useEffect(()=>{
-    if(isOn && play.isDisplay && play.colors.length){
-      displayColors()
+  useEffect(() => {
+    if (isOn && play.isDisplay && play.colors.length) {
+      displayColors();
     }
-  }, [isOn, play.isDisplay, play.colors.length])
+  }, [isOn, play.isDisplay, play.colors.length]);
 
-  async function displayColors(){
+  async function displayColors() {
     await timeout(500);
-    for(let i = 0; i< play.colors.length; i++){
+    for (let i = 0; i < play.colors.length; i++) {
       setFlashColor(play.colors[i]);
       await timeout(500);
       setFlashColor("");
       await timeout(500);
 
-      if(i === play.colors.length - 1){
+      if (i === play.colors.length - 1) {
         const copyColors = [...play.colors];
 
         setPlay({
@@ -69,61 +69,79 @@ export default function Simon({ setPath }) {
     }
   }
 
-  async function cardClickHandle(color){
-    if(!play.isDisplay && play.userPlay){
+  async function cardClickHandle(color) {
+    if (!play.isDisplay && play.userPlay) {
       const copyUserColors = [...play.userColors];
       const lastColor = copyUserColors.pop();
       setFlashColor(color);
-      
-      
-      
 
-      if(color === lastColor){
-        if(copyUserColors.length){
-          setPlay({...play, userColors:copyUserColors})
-        }else{
+      if (color === lastColor) {
+        if (copyUserColors.length) {
+          setPlay({ ...play, userColors: copyUserColors });
+        } else {
           await timeout(500);
-          setPlay({...play, isDisplay:true, userPlay:false, score:play.colors.length, userColors:[]})
+          setPlay({
+            ...play,
+            isDisplay: true,
+            userPlay: false,
+            score: play.colors.length,
+            userColors: [],
+          });
         }
-        
-      }else{
+      } else {
         await timeout(500);
-        setPlay({...initPLay, score:play.colors.length})
+        setPlay({ ...initPLay, score: play.colors.length });
       }
       await timeout(500);
       setFlashColor("");
     }
   }
 
-  function closeHandle(){
-    setIsOn(false)
+  function closeHandle() {
+    setIsOn(false);
   }
 
   return (
-    <div className='backgroundSimon'>
-      <h3 className='textSimon'>Follow instructions and take your time !</h3>
-      <div className='cardWrapper'>
-        {
-          colorList && colorList.map((v, i) => (<ColorCard onClick={()=>{cardClickHandle(v)}} flash={flashColor === v} color={v} />) )
-        }
+    <div className="backgroundSimon">
+      <h3 className="textSimon">Follow instructions and take your time !</h3>
+      <div className="cardWrapper">
+        {colorList &&
+          colorList.map((v, i) => (
+            <ColorCard
+              onClick={() => {
+                cardClickHandle(v);
+              }}
+              flash={flashColor === v}
+              color={v}
+            />
+          ))}
       </div>
       {isOn && !play.isDisplay && !play.userPlay && play.score && (
-        <div className='lost'>
+        <div className="lost">
           <div>Finalscore : {play.score - 1}</div>
-          <button className='closeButton' onClick={closeHandle}>Close</button>
+          <button className="closeButton" onClick={closeHandle}>
+            Close
+          </button>
         </div>
       )}
       {!isOn && !play.score && (
-        <button className='startButton' onClick={startHandle}>Start</button>
+        <button className="startButton" onClick={startHandle}>
+          Start
+        </button>
       )}
-      { isOn && (play.isDisplay || play.userPlay) && (
-        <div className='score'>{play.score}</div>
+      {isOn && (play.isDisplay || play.userPlay) && (
+        <div className="score">{play.score}</div>
       )}
-      {play.score >= 5 ? <div className='next'>
-        <h3>Beginner's luck, move on</h3>
-        <button className='nextButton' onClick={() => setPath('/Snake')}>Next</button>
-        </div> : ""}
+      {play.score >= 5 ? (
+        <div className="next">
+          <h3>Beginner's luck, move on</h3>
+          <button className="nextButton" onClick={() => setPath("/Snake")}>
+            Next
+          </button>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
-  )
+  );
 }
-

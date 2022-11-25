@@ -22,12 +22,54 @@ function Map({
           This planet is not accessible for the moment! Find the
           crystals in order to continue your quest.
         </button>
-      ) : ''}
-      <button aria-label="planet-1" type="button" className="map-planet map-planet-1" onClick={() => setPath('planet-1')} />
-      <button aria-label="planet-2" type="button" className={`map-planet-2 ${planet1isIsClickable === true ? 'map-planet' : 'notClickable-planet'}`} onClick={planet1isIsClickable ? () => setPath('planet-2') : handleDisplayModal} />
-      <button aria-label="planet-3" type="button" className={`map-planet-3 ${planet2isIsClickable === true ? 'map-planet' : 'notClickable-planet'}`} onClick={planet2isIsClickable ? () => setPath('planet-3') : handleDisplayModal} />
-      <button aria-label="planet-4" type="button" className={`map-planet-4 ${planet3isIsClickable === true ? 'map-planet' : 'notClickable-planet'}`} onClick={planet3isIsClickable ? () => setPath('planet-4') : handleDisplayModal} />
-      {planet4isIsClickable && <button onClick={() => setPath('final-page')} className='button-backToHome' type='button'>Back to home!</button>}
+      ) : (
+        ""
+      )}
+      <button
+        aria-label="planet-1"
+        type="button"
+        className="map-planet map-planet-1"
+        onClick={() => setPath("planet-1")}
+      />
+      <button
+        aria-label="planet-2"
+        type="button"
+        className={`map-planet-2 ${
+          planet1isIsClickable === true ? "map-planet" : "notClickable-planet"
+        }`}
+        onClick={
+          planet1isIsClickable ? () => setPath("planet-2") : handleDisplayModal
+        }
+      />
+      <button
+        aria-label="planet-3"
+        type="button"
+        className={`map-planet-3 ${
+          planet2isIsClickable === true ? "map-planet" : "notClickable-planet"
+        }`}
+        onClick={
+          planet2isIsClickable ? () => setPath("planet-3") : handleDisplayModal
+        }
+      />
+      <button
+        aria-label="planet-4"
+        type="button"
+        className={`map-planet-4 ${
+          planet3isIsClickable === true ? "map-planet" : "notClickable-planet"
+        }`}
+        onClick={
+          planet3isIsClickable ? () => setPath("planet-4") : handleDisplayModal
+        }
+      />
+      {planet4isIsClickable && (
+        <button
+          onClick={() => setPath("final-page")}
+          className="button-backToHome"
+          type="button"
+        >
+          Back to Earth !
+        </button>
+      )}
     </div>
   );
 }
