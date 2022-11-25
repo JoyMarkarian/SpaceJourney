@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './superQuizz.css'
 
-export default function SuperQuizz() {
-    const [showResults, setShowResults] = useState(false);
+export default function SuperQuizz({ setPath }) {
+  const [showResults, setShowResults] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
 
@@ -77,9 +77,9 @@ export default function SuperQuizz() {
     setShowResults(false);
   };
   return (
-    <div>
+    <div className='backgroundQuizz'>
         {/* 1. Header  */}
-        <h1>SuperQuizz</h1>
+        <h1>Challenge the SuperQuizz</h1>
         {/* 2. Current Score  */}
         <h2>Score: {score}</h2>
 
@@ -118,6 +118,10 @@ export default function SuperQuizz() {
             </ul>
         </div>
         )}
+        { score === 5 ? <div>
+                <h3>Wow, i'm impress by D answer</h3>
+                <button className='buttonQuizz' onClick={() => setPath('/AreYou')}>Next</button>
+                </div> : ""}
     </div>
   )
 }

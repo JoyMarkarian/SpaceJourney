@@ -22,10 +22,9 @@ export default function FindCristal4({ checkQuest, setPlanet4isIsClickable, setP
       <button onClick={() => setPath('/map')} aria-label="back to map" className="button-backToMap btn-cristal-4" type="button">Back to map</button>
       <button onClick={() => setdisplayCrystal(!displayCrystal)} aria-label="crystal-4" className="myCristal-toFind4" type="button" />
       {displayRules && (
-      <div className='myCrystal-container'>
-        <div className='' />
+      <div className='myCrystal-container4'>
         <h2>It is a moon of Delmak that the ancients transformed into a volcanic star. His goal was to recreate the conditions of Hell according to the myth (Netu in Ancient Egyptian corresponding to Hell). It would be better to hurry to find the last crystal, it is dangerous to stay here.</h2>
-        <button onClick={dNoneRules} type='button' className="btn-cristal-1">Search it</button>
+        <button onClick={dNoneRules} type='button' className="btn-cristal-4">Search it</button>
       </div>
       )}
       {displayCrystal && (
