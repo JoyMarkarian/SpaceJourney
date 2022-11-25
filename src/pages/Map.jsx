@@ -18,13 +18,9 @@ function Map({
   return (
     <div className="map-bg">
       {displayModal ? (
-        <button
-          type="button"
-          onClick={() => setDisplayModal(false)}
-          className="map-not-possible"
-        >
-          Cette planète n'est pas accessible pour le moment. Retrouve les
-          cristaux précédents afin de pouvoir poursuivre ta quête.
+        <button type="button" onClick={() => setDisplayModal(false)} className="map-not-possible">
+          This planet is not accessible for the moment! Find the
+          crystals in order to continue your quest.
         </button>
       ) : (
         ""

@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-import "./finalPage.css";
+import React, { useState } from 'react';
+import BackEarth from '../components/BackEarth';
+import Dont_touch from '../components/Dont_touch';
+import './finalPage.css';
 
-function FinalPage({ userPseudo }) {
+function FinalPage({ userPseudo, setPath }) {
   const [displayRocket, setDisplayRocket] = useState(false);
   return (
     <div>
@@ -18,23 +20,13 @@ function FinalPage({ userPseudo }) {
         </div>
       )}
       <div className="finalpage-cockpit">
-        <div className="final-msg">
-          <p>
-            Finally, the rocket is fixed. <strong>{userPseudo}</strong> can
-            return to Earth !
-          </p>
-          <button
-            onClick={() => setDisplayRocket(!displayRocket)}
-            type="button"
-          >
-            Back to Earth
-          </button>
+        <div className='final-msg'>
+          <p>Finally the rocket is fixed <strong>{userPseudo}</strong> can return to Earth!</p>
+          <BackEarth displayRocket={displayRocket} setDisplayRocket={setDisplayRocket} />
         </div>
-        <div className="dontTouch-msg">
-          <p>
-            Oh ! A mysterious button appeared after the repair. Wanna press it ?
-          </p>
-          <button type="button">Don't touch</button>
+        <div className='dontTouch-msg'>
+          <p>Oh! A mysterious button appeared after the repair. Wana press it?</p>
+          <Dont_touch setPath={setPath} />
         </div>
       </div>
     </div>

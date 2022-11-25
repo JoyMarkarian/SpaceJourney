@@ -27,9 +27,9 @@
     right: 428px;
     background-color: rgb(224 96 68/ 87%);
     padding: 60px;
-    width: 300px;
+    width: 500px;
     border-radius: 130px;
-    font-size: large;
+    /* font-size: large; */
 }
 .myCristal {
     background-image: url('src/assets/crystal-1.png');
